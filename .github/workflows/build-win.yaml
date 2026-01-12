@@ -34,7 +34,6 @@ jobs:
         include:
           - { sys: vcvars64, env: x86_64, runner: windows-latest }
           - { sys: vcvars32, env: i686, runner: windows-latest }
-          - { sys: vcvarsarm64, env: arm64, runner: windows-11-arm }
     runs-on: ${{ matrix.runner }}
     steps:
       - name: configure Pagefile
